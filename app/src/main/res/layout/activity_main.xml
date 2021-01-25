@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textinput"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/design_default_color_secondary_variant"
+        android:maxLength="15"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textSize="48sp"
+        android:padding="15dp"
+        android:text="0"
+        android:gravity="right|bottom|center_vertical"
+        />
+    <!-- Row 1-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FF424242"
+            android:onClick="btn"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="btn"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="btn"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btndivde"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="operator"
+            android:text="/" />
+    </LinearLayout>
+    <!-- Row 2-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="btn"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="btn"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="btn"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnmultiply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="operator"
+            android:text="*" />
+    </LinearLayout>
+    <!-- Row 3-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="btn"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="btn"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="btn"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnsubtract"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="operator"
+            android:text="-" />
+    </LinearLayout>
+    <!-- Row 4-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/btndecimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="decimal"
+            android:background="@color/cardview_dark_background"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btn0"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="btn"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="operator"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/btnclr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
+            android:onClick="clear"
+            android:text="clr" />
+    </LinearLayout>
+    <!-- Row 5-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/btnequal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="="
+            android:textSize="30sp"
+            android:onClick="equals"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
